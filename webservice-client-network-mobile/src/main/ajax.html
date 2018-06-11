@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>通过ajax方式调用webservice，因为需要用ajax发送流所以我不会做 哭...</title>
+</head>
+<body>
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+	手机号：
+	<input type="text" id="testID">
+	<input type="button" value="查询" id="testID" onclick="cli();">
+	<script type="text/javascript">
+		var reqxml = "<?xml version=\"1.0\" encoding=\"utf-8\"?>
+		<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><getMobileCodeInfo xmlns=\"http://WebXml.com.cn/\"><mobileCode>18888888888</mobileCode><userID></userID></getMobileCodeInfo></soap:Body></soap:Envelope>";
+		function cli() {
+			alert(reqxml);
+			$.ajax({
+				type : "POST",
+				url : "http://ws.webxml.com.cn/WebServices/MobileCodeWS.asmx",
+				data : reqxml,
+				dataType : "xml",
+				success : function(data) {
+					alert("success" + data);
+				},
+				error : function(data) {
+					alert("error" + data);
+					console.log(data)
+				}
+			});
+		}
+	</script>
+</body>
+</html>
