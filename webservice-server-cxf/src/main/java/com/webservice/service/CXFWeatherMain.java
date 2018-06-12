@@ -2,7 +2,7 @@ package com.webservice.service;
 
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 
-import com.webservice.service.sei.inter.WeatherSeiImpl;
+import com.webservice.service.sei.WeatherSeiImpl;
 import com.webservice.service.sei.inter.WeatherSeiInter;
 
 public class CXFWeatherMain {
