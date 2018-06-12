@@ -15,6 +15,7 @@
 		<module>webservice-server</module>
 		<module>webservice-server-cxf</module>
 		<module>weservice-common</module>
+		<module>webservice-client-cxf</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>

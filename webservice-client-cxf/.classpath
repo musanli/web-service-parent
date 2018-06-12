@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/web-service-parent/cxflib/cxf-manifest.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/FastInfoset.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/gmbal-api-only.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/ha-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/javax.annotation-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/javax.xml.soap-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxb-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxb-core.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxb-impl.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxb-jxc.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxb-xjc.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxws-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxws-rt.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jaxws-tools.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/jsr181-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/management-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/mimepull.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/policy.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/resolver.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/saaj-impl.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/stax-ex.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/stax2-api.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/streambuffer.jar"/>
+	<classpathentry kind="lib" path="/web-service-parent/lib/woodstox-core-asl.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
