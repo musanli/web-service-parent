@@ -1,5 +1,7 @@
 package com.webservice.service;
 
+import org.apache.cxf.interceptor.LoggingInInterceptor;
+import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 
 import com.webservice.service.sei.WeatherSeiImpl1;
@@ -20,6 +22,11 @@ public class CXFWeatherMain1 {
 		jaxWsServerFactoryBean.setServiceBean(new WeatherSeiImpl1());
 		/*		设置服务地址		*/
 		jaxWsServerFactoryBean.setAddress("http://127.0.0.1:12345/weather");
+		/*		添加请求拦截器		*/
+		System.out.println("请求数据 ... ... ...");
+		jaxWsServerFactoryBean.getInInterceptors().add(new LoggingInInterceptor());
+		System.out.println("返回数据 ... ... ...");
+		jaxWsServerFactoryBean.getOutInterceptors().add(new LoggingOutInterceptor());
 		/*		开启服务		*/
 		jaxWsServerFactoryBean.create();
 	}

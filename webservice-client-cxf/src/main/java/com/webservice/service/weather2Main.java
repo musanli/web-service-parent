@@ -10,7 +10,7 @@ public class weather2Main {
 		/* 获取 JaxWsProxyFactoryBean */
 		JaxWsProxyFactoryBean JaxWsProxyFactoryBean = new JaxWsProxyFactoryBean();
 		/* 设置服务地址 */
-		JaxWsProxyFactoryBean.setAddress("http://127.0.0.1:12345/weather?wsdl");
+		JaxWsProxyFactoryBean.setAddress("http://127.0.0.1:12346/weather?wsdl");
 //		/* 设置服务接口 */
 //		JaxWsProxyFactoryBean.setServiceClass(WeatherSeiInter2.class);
 		/* 获取服务接口实例 */
