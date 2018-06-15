@@ -16,6 +16,7 @@
 		<module>webservice-server-cxf</module>
 		<module>weservice-common</module>
 		<module>webservice-client-cxf</module>
+		<module>webservice-server-cxf-web-spring-client</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>

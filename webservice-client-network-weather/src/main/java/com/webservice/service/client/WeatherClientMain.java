@@ -29,14 +29,14 @@ public class WeatherClientMain {
 		WeatherWSSoap port = service.getPort(WeatherWSSoap.class);
 		ArrayOfString regionProvince = port.getRegionProvince();
 		
-		System.out.println(port.getWeather("3114",null).getString());
-//		List<String> list = regionProvince.getString();
-//		for (String item : list) {
+		System.out.println(port.getWeather("北京",null).getString());
+		List<String> list = regionProvince.getString();
+		for (String item : list) {
 //			String a = null ;
 //			a = item.substring(0 , item.indexOf(","));
 //			System.out.print(a + "\t");
 //			ArrayOfString weather = port.getWeather(a,null);
 //			System.out.println(item + ":" +weather.getString());
-//		}
+		}
 	}
 }
